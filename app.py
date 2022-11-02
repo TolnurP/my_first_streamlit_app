@@ -90,8 +90,6 @@ The 2 changes I made were:
 """
 )
 
-from vega_datasets import data
-
 source = data.wheat()
 st.write(source)
 
