@@ -89,8 +89,7 @@ The 2 changes I made were:
 - Added Tooltip.
 """
 )
-
-source = data.wheat()
+source = pd.read_excel('Data_Wheat.xlsx')
 st.write(source)
 
 chart=alt.Chart(source, title='Line Chart with Varying Size').mark_trail().interactive().encode(
